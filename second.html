@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li{
+                display: inline-block;
+                padding-right: 20px;
+            }
+            .qq{
+                display: inline-block;
+                padding-left: 40px;
+            }
+            a{
+                text-decoration: none;
+                color: rgb(55, 160, 179);
+            }
+            a:hover{color: rgb(0, 0, 0);}
+            .dropdown {
+  position: relative;
+  display: inline-block;
+  color: rgb(55, 160, 179);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: antiquewhite;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: rgb(29, 84, 94);
+}
+            .dropdown-content p:hover{
+                color: rgb(0, 0, 0);
+                font-weight: 600;
+            }
+
+            body{
+                background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg1.doubanio.com%2Fview%2Fgroup_topic%2Fl%2Fpublic%2Fp402917199.jpg&refer=http%3A%2F%2Fimg1.doubanio.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657336934&t=93475e5c2b02ce268609124ac4baabeb);
+            }
+
+            input[type=text]{
+               width: 60px;
+               height: 40px;
+               margin-left: 35%;
+               margin-top: 150px;
+               border: none;
+               border-radius: 20px;
+               padding-left: 30px;
+               background-image: url("https://img2.baidu.com/it/u=32962536,800082634&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500");
+               background-position: left;
+               background-repeat: no-repeat;
+               background-size: 30px;
+               transition: width 1s ease-in-out;
+               outline: none;
+           }
+           input:focus{
+               width: 450px;
+           }
+           button{
+               margin-left: 49%;
+            
+            height: 35x;  
+            width: 80px; 
+            text-align: center; 
+            background-color: rgb(184, 136, 84); 
+            border: none; 
+            border-radius: 10px; 
+            color: rgb(255, 255, 255); 
+            font-size: 20px; 
+            }
+            button:hover{
+                background-color:rgb(205, 117, 24) ;
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div>
+        <ul>
+            <li>
+                <a href="https://www.bilibili.com/"><img src="https://img0.baidu.com/it/u=1968534578,1943088953&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" alt=""
+        width="120px" height="60px"></a>
+            </li>
+            <div class="qq">
+            <li><a href="https://www.bilibili.com/video/BV1G34y1L76z?spm_id_from=333.851.b_7265636f6d6d656e64.4">picture</a> </li>
+            <li><a href="https://www.bilibili.com/v/dance/?spm_id_from=333.1007.0.0">video</a></li>
+            <li>
+                <div class="dropdown">
+                    <span>more</span>
+                    <div class="dropdown-content">
+                      <p>maps</p>
+                      <p title="#">news</p>
+                    </div>
+                </div>        
+                  </div>
+                  <br>
+                  <div >
+                    <input type="text" class="ppp"><br><br>
+                    <button>search</button>    
+                  </div>
+          
+
+    </body>
+</html>
