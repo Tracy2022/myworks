@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>非常难搞的一个js练习</title>
+ <style type="text/css">
+ div {
+text-align: center;
+font-size: 100px;
+padding: 100px;
+}
+
+button {
+display: block;
+margin: 50px auto;
+width: 400px;
+height: 100px;
+font-size: 30px;
+position: relative;
+background-color: antiquewhite;
+border-radius: 25px;
+}
+span {
+color: rgba(255, 0, 17, 0.959)
+}
+
+</style>
+</head>
+
+<body>
+<button id="start" onclick="startTime()">开始计时</button>
+<div id="demo"> </div> 
+<script type="text/javascript">
+ var myVar;
+ var i = 0;
+ var j = 0;
+
+function startTime() {
+ var block=document.getElementById("demo");
+ var myButton = document.getElementById("start");
+if (i % 2 == 0) {
+myButton.innerHTML = "暂停计时";
+myVar = setInterval(function(){
+j += 1;
+block.innerHTML = '时间过去了 '+'<span>' +j +'</span>'+'秒';
+}, 1000)
+ } else {
+ myButton.innerHTML = "开始计时";
+ clearInterval(myVar);
+ }
+ i++;//点击次数累加increment
+ }
+</script>
+ </body>
+</html>
